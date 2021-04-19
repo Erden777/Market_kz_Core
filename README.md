@@ -1,10 +1,21 @@
 # Market_kz_Core
+## Milestone 1
+relations (one-to-one, one-to-many, many-to-many)
 
-# Milestone 1 
-# with models 
-  Users
-  Countries 
-  Items 
-  Categories 
-  Comments 
-  Basket
+- Users
+- Items
+- Categories
+- Comments
+- Basket
+- Order
+- Country
+
+## Conrollers
+
+- HomeController
+- CountryControllers
+- CateoriesControllers
+- UsersControllers
+
+> CRUD operation some models 
+
