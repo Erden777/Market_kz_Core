@@ -159,3 +159,13 @@ E:\3 course\dot.net-core\Market-kz_new_version\Market-kz_new_version\obj\Debug\n
 E:\3 course\dot.net-core\Market-kz_new_version\Market-kz_new_version\obj\Debug\net5.0\Razor\Views\Categories\Details.cshtml.g.cs
 E:\3 course\dot.net-core\Market-kz_new_version\Market-kz_new_version\obj\Debug\net5.0\Razor\Views\Categories\Edit.cshtml.g.cs
 E:\3 course\dot.net-core\Market-kz_new_version\Market-kz_new_version\obj\Debug\net5.0\Razor\Views\Categories\Index.cshtml.g.cs
+E:\3 course\dot.net-core\Market-kz_new_version\Market-kz_new_version\obj\Debug\net5.0\Razor\Views\Items\Create.cshtml.g.cs
+E:\3 course\dot.net-core\Market-kz_new_version\Market-kz_new_version\obj\Debug\net5.0\Razor\Views\Items\Delete.cshtml.g.cs
+E:\3 course\dot.net-core\Market-kz_new_version\Market-kz_new_version\obj\Debug\net5.0\Razor\Views\Items\Details.cshtml.g.cs
+E:\3 course\dot.net-core\Market-kz_new_version\Market-kz_new_version\obj\Debug\net5.0\Razor\Views\Items\Edit.cshtml.g.cs
+E:\3 course\dot.net-core\Market-kz_new_version\Market-kz_new_version\obj\Debug\net5.0\Razor\Views\Items\Index.cshtml.g.cs
+E:\3 course\dot.net-core\Market-kz_new_version\Market-kz_new_version\obj\Debug\net5.0\Razor\Views\Users\Create.cshtml.g.cs
+E:\3 course\dot.net-core\Market-kz_new_version\Market-kz_new_version\obj\Debug\net5.0\Razor\Views\Users\Delete.cshtml.g.cs
+E:\3 course\dot.net-core\Market-kz_new_version\Market-kz_new_version\obj\Debug\net5.0\Razor\Views\Users\Details.cshtml.g.cs
+E:\3 course\dot.net-core\Market-kz_new_version\Market-kz_new_version\obj\Debug\net5.0\Razor\Views\Users\Edit.cshtml.g.cs
+E:\3 course\dot.net-core\Market-kz_new_version\Market-kz_new_version\obj\Debug\net5.0\Razor\Views\Users\Index.cshtml.g.cs

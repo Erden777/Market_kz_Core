@@ -19,10 +19,68 @@ namespace Market_kz_new_version.Controllers
         }
 
         // GET: Countries
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string sortOrder,
+                                                string currentFilter,
+                                                string searchString,
+                                                int? pageNumber)
         {
-            return View(await _context.countries.ToListAsync());
+            ViewData["CurrentSort"] = sortOrder;
+            ViewData["NameSortParm"] = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+            ViewData["CodeSortParm"] = sortOrder == "Code" ? "code_desc" : "Code";
+            if (searchString != null)
+            {
+                pageNumber = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
+
+            ViewData["CurrentFilter"] = searchString;
+
+            var countries = from m in _context.countries
+                            select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                countries = countries.Where(s => s.Name.Contains(searchString)
+                                       || s.Name.Contains(searchString));
+            }
+
+            switch (sortOrder)
+            {
+                case "name_desc":
+                    countries = countries.OrderByDescending(s => s.Name);
+                    break;
+                case "code":
+                    countries = countries.OrderBy(s => s.Code);
+                    break;
+                case "code_desc":
+                    countries = countries.OrderByDescending(s => s.Code);
+                    break;
+                default:
+                    countries = countries.OrderBy(s => s.Name);
+                    break;
+            }
+           
+
+            int pageSize = 3;
+            return View(await PaginatedList<Country>.CreateAsync(countries.AsNoTracking(), pageNumber ?? 1, pageSize));
         }
+
+
+        /*public async Task<IActionResult> Index(string searchString)
+        {
+            var countries = from m in _context.countries
+                         select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                countries = countries.Where(s => s.Name.Contains(searchString));
+            }
+
+            return View(await countries.ToListAsync());
+        }*/
 
         // GET: Countries/Details/5
         public async Task<IActionResult> Details(int? id)
