@@ -19,3 +19,5 @@ relations (one-to-one, one-to-many, many-to-many)
 
 > CRUD operation some models 
 
+## Milestone 2
+paging, sorting, filtering, etc. this will make your crud operations visually easy to perform.
